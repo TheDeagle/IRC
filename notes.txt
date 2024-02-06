@@ -1,0 +1,31 @@
+OPER is sus
+KICK is not working as expected
+JOIN is joining but not sending a msg
+QUIT is sus on different clients
+INVITE i should finish it
+cant join INVITEONLY channel by inviting
+
+:irc.example.com 353 yourNick @ #channel :@operator +voicedUser regularUser
+:server_name 332 your_nick #channel :New Topic Here
+:server 482 nickname #channel :You're not channel operator
+:server 401 yourNickname targetNick :No such nickname
+:server 404 nickname #channel :You have been kicked from #channel by nickname
+:server_name 473 your_nick #channel :Cannot join channel (+i)
+:server_name 475 your_nick #channel :Cannot join channel (+k)
+:server_name 471 your_nick #channel :Cannot join channel (User limit reached)
+---------------------------------------------------------------------------------------------
+:issuerNick!issuerUser@issuerHost KICK #channel targetNick :reason
+#channel :You're not channel operator
+TOPIC #channel :Wtf
+MODE #channel i
+:server_name MODE #channel +o User
+Cannot join #channel (Requires keyword)
+---------------------------------------------------------------------------------------------
+:DCC SENDER_IP SENDER_PORT RECEIVER_NICK FILE_NAME
+---------------------------------------------------------------------------------------------
+:hben! PRIVMSG #channel :dfadas
+
+
+protocol param
+IPPROTO_TCP
+IPPROTO_UDP
